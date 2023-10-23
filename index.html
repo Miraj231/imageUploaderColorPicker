@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>colorPiker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <section class="container">
+          <div class="text">
+             <h1>...pick your color online!</h1>
+          </div>
+        <!-- canvas section stard-->
+          <section class="canvasMain">
+             <canvas id="canvas" width="500px" height="400px"></canvas>
+          </section>
+          <!-- canvas section  end-->
+          <!-- result div is here -->
+            <section class="colorWrapper"> 
+              <div class="ColorText">
+                 <span class="colorSpan">Colors</span>
+              </div>
+              <div class="backgroundColors">
+                 <div id="color"></div>
+              </div>
+              <div class="hexColors">
+                 <div id="status"><span id="HexText">Hex:</span><span class="hexNumberandCharaters">#f79242</span></div>
+              </div>
+            </section>
+          <!-- result div is here end -->
+          <!-- file uploader section start -->
+          <section class="btns-container">
+            <div class="inputContainer">
+               <input type="file" class="Input-file" accesskey="image/*" />
+               <label for="file">Use your image</label>
+            </div> 
+            <div class="Ptext">
+               <p>We think data protection is important!<span class="no-data-is-sent">`No data is sent.`</span> The magic happens in your browser.</p>
+            </div>
+          </section>
+          <!-- file uploader section end -->
+          <!-- Color-Picker section start -->
+          <section class="Color-Picker">
+             <h1>Color Picker</h1>
+             <h3>Click on the image to pick a color...</h3>
+             <p>Use the online image color picker above to select a color and get the HTML Color Code of this pixel. Also you get the HEX color code value, RGB value and HSV value. Under 'Use Your Image' You can upload your own image (for example an screenshot of your desktop), paste an image from clipboard, put a picture url in the textbox below. Or use an website url, you will see a thumbnail on the left side</p>
+          </section>
+      </section>
+  
+    <script src="main.js"></script>
+</body>
+</html>
